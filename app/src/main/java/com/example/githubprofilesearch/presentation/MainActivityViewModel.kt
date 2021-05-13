@@ -29,7 +29,7 @@ constructor(
      * @param page results per page (max 100)
      * @param count page number of the results to fetch
      */
-    fun getUserSearch(keyword: String, page: Int, count: Int) {
+    fun doSearch(keyword: String, page: Int, count: Int) {
         viewModelScope.launch {
             mutableSearch.postValue(
                 repository.doSearch(token, keyword, page, count)
