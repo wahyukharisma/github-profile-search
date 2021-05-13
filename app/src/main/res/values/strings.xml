@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GithubProfileSearch</string>
+    <string name="hint_search">Type profile name...</string>
 </resources>
