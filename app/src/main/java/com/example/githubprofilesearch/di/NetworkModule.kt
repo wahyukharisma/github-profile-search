@@ -1,5 +1,6 @@
 package com.example.githubprofilesearch.di
 
+import com.example.githubprofilesearch.BuildConfig
 import com.example.githubprofilesearch.services.GithubServices
 import com.example.githubprofilesearch.util.Constant
 import dagger.Module

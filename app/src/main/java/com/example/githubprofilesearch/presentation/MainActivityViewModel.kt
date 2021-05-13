@@ -17,7 +17,7 @@ class MainActivityViewModel
 @Inject
 constructor(
     private val repository: ISearchRepository,
-    @Named("token") private val token: String
+    @Named("access_token") private val token: String
 ) : ViewModel() {
     private val mutableSearch = MutableLiveData<ResultOfNetwork<UserSearch>>()
     val searchResult: LiveData<ResultOfNetwork<UserSearch>> get() = mutableSearch
