@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface GithubServices {
     @GET("search/users")
-    suspend fun userSearch(
+    suspend fun search(
         @Header("Authorization") bearer: String,
         @Query("q") keyword: String,
         @Query("page") page: Int,
