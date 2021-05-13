@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">GithubProfileSearch</string>
     <string name="hint_search">Type profile name...</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="empty_search_result">Empty Profile Loaded</string>
+    <string name="load_more_search">Load More...</string>
 </resources>
