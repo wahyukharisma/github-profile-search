@@ -2,7 +2,6 @@ package com.example.githubprofilesearch.presentation
 
 import android.content.Context
 import android.os.Bundle
-import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
@@ -26,15 +25,16 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private val viewModelMain: MainActivityViewModel by viewModels()
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var adapter: SearchResultAdapter
+
+    private var page = 1
+    private var keyword = ""
 
     companion object {
         const val COUNT = 10
     }
-
-    private var page = 1
-    private var keyword = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

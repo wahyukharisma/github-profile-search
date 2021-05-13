@@ -47,7 +47,7 @@ class MainActivityViewModelTest{
     fun `search user, return success`() {
         runBlocking {
             launch(Dispatchers.Main) {
-                viewModel.getUserSearch("user", 5, 1)
+                viewModel.doSearch("user", 5, 1)
             }
         }
         viewModel.searchResult.observeForever { }
