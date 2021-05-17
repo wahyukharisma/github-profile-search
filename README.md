@@ -13,6 +13,7 @@ Github Profile Search is a mobile apps to find user in github, type your keyword
    ```JS
    API_KEY = 'access_token';
    ```
+4. Sync project, and ready to go
 
 ## Tech Stack
 - Kotlin
