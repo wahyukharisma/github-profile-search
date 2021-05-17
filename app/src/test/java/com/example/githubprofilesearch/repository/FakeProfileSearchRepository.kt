@@ -17,7 +17,7 @@ class FakeProfileSearchRepository : ISearchRepository {
         count: Int
     ): ResultOfNetwork<UserSearch> {
         return if(testingFailure){
-            ResultOfNetwork.error("Request Failed", null)
+            ResultOfNetwork.error("Request Failed", 0,  null)
         }else{
             ResultOfNetwork.success(userSearch)
         }

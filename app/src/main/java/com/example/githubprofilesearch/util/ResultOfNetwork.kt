@@ -11,7 +11,7 @@ data class ResultOfNetwork<out T>(val status: Status, val data: T?, val message:
             return ResultOfNetwork(Status.SUCCESS, data, null)
         }
 
-        fun <T> error(msg: String, data: T?): ResultOfNetwork<T> {
+        fun <T> error(msg: String,code: Int, data: T?): ResultOfNetwork<T> {
             return ResultOfNetwork(Status.ERROR, data, msg)
         }
     }

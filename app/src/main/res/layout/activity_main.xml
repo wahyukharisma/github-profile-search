@@ -9,7 +9,7 @@
     <EditText
         android:id="@+id/et_search"
         style="@style/EditTextSearch"
-        android:layout_width="0dp"
+        android:layout_width="0in"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="16dp"

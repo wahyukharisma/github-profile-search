@@ -20,12 +20,12 @@ constructor( private val githubServices: GithubServices) : ISearchRepository{
             if (response.isSuccessful) {
                 response.body()?.let { data ->
                     return ResultOfNetwork.success(data)
-                } ?: ResultOfNetwork.error("Request failed", null)
+                } ?: ResultOfNetwork.error("Request failed", response.code(), null)
             } else {
-                ResultOfNetwork.error("Request failed", null)
+                ResultOfNetwork.error("Request failed",response.code(), null)
             }
         }catch (ex : Exception){
-            ResultOfNetwork.error("Request failed ${ex.message}", null)
+            ResultOfNetwork.error("Request failed ${ex.message}", ex.hashCode(),null)
         }
     }
 }
