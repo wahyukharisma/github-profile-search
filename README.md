@@ -9,7 +9,7 @@ Github Profile Search is a mobile apps to find user in github, type your keyword
    ```sh
    git clone https://github.com/wahyukharisma/github-profile-search.git
    ```
-3. Enter your API in `graddle.properties`
+3. Enter your access token in `graddle.properties`
    ```JS
    API_KEY = 'access_token';
    ```
