@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private var page = 1
     private var keyword = ""
+    private var testing = ""
 
     companion object {
         const val COUNT = 10

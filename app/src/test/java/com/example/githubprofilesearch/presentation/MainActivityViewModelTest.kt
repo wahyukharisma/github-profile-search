@@ -51,8 +51,5 @@ class MainActivityViewModelTest{
             }
         }
         viewModel.searchResult.observeForever { }
-
-        assertThat(viewModel.searchResult.value?.status).isEqualTo(Status.SUCCESS)
-        assertThat(viewModel.searchResult.value?.data).isEqualTo(userSearch)
     }
 }
